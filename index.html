@@ -9,11 +9,24 @@
         h1 {
             color: goldenrod;
         }
-        #food-title{
-            color: green;
+
+        .bg-red{
+            background-color: red;
+        }
+        .bold{
+            font-weight: 900;
         }
 
-        .food .foreign{
+        .big{
+            font-size: 3em;
+        }
+
+        #food-title {
+            color: green;
+            background-color: lightgreen;
+        }
+
+        .food .foreign {
             font-weight: 700;
         }
     </style>
@@ -28,12 +41,13 @@
     <main>
         <section id="old-dhaka" class="songs">
             <h1>Welcome to my DOM</h1>
-            <p>Lorem ipsum dolor sit amet <span> oli goli</span> adipisicing elit <span>alias</span>. Accusantium, temporibus.</p>
+            <p>Lorem ipsum dolor sit amet <span> oli goli</span> adipisicing elit <span>alias</span>. Accusantium,
+                temporibus.</p>
             <h1>Lorem ipsum dolor sit amet consectetur <span>Some text</span>, adipisicing elit. Atque, facilis.</h1>
             <ul>
                 <li>Shafayet</li>
                 <li>bonobash</li>
-                <li id="band">Jalali set</li>
+                <li id="band" class="">Jalali set</li>
                 <li>Dom Dere Baba</li>
                 <li class="international">dubai</li>
             </ul>
@@ -51,9 +65,20 @@
             </ul>
         </section>
 
+        <section id="players-container">
+            <h1>Players</h1>
+            <ul>
+                <li>Messi</li>
+                <li>Ronaldo</li>
+                <li>Neymar</li>
+                <li>Mbappe</li>
+                <li>Pele</li>
+            </ul>
+        </section>
+
 
     </main>
-    <script>
+    <!-- <script>
         // console.log("Hello from JS!!!");
         // console.log("Hello bole chole gelo");
 
@@ -93,19 +118,21 @@
         const foreignElement = document.getElementsByClassName("foreign");
         console.log(foreignElement);
 
-        for(const element of foreignElement){
+        for (const element of foreignElement) {
             console.log(element.innerText)
         }
 
         // query selector all
         const spanElements = document.querySelectorAll("#old-dhaka p span");
-        for(const span of spanElements){
+        for (const span of spanElements) {
             console.log(span.innerText);
         }
 
 
     </script>
-    <script src="./js/hello.js"></script>
+    <script src="./js/hello.js"></script> -->
+ <script src="./js/cssInJS.js"></script>
+
 </body>
 
 </html>
