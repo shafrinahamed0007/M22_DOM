@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <style>
+        h1 {
+            color: goldenrod;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>This is my header no banner</h1>
+    </header>
+    <main>
+        <h1>Welcome to my DOM</h1>
+        <ul>
+            <li>Shafayet</li>
+            <li>bonobash</li>
+            <li>Jalali set</li>
+            <li>Dom Dere Baba</li>
+        </ul>
+
+
+    </main>
+    <script>
+        // console.log("Hello from JS!!!");
+        // console.log("Hello bole chole gelo");
+
+        // console.log("Document Object Model");
+
+        const student = {
+            name: "Abul Mia",
+            id: 121,
+            study: function (subject) {
+                console.log("Studying subject: ", subject);
+
+            }
+        }
+
+        // document.getElementsByTagName
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+
+        // All h1 tags
+        const allHeading  = document.getElementsByTagName("h1");
+        for(h1 of allHeading){
+            console.log(h1.innerText);
+        }
+
+
+    </script>
+    <script src="./js/hello.js"></script>
+</body>
+
+</html>
